@@ -1,0 +1,13 @@
+body {
+  width: 100%;
+  height: 100%;
+  position:relative;
+  background: url("./images/sushi-nigiri-japanese-food-rolls-salmon.jpg");
+  background-size: cover;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
