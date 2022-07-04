@@ -1,10 +1,17 @@
+import california from "../images/california.png"
+import dragon from "../images/dragon.png"
+import dynamite from "../images/dynamite.png"
+import philadelphia from "../images/philadelphia.png"
+import rainbow from "../images/rainbow.png"
+import shrimp from "../images/shrimp.png"
+
 export const ITEMS = [
   { 
     id: 0, 
     nome: "California", 
     porzione: "6 pz.", 
     prezzo: 1.99, 
-    immagine: '../images/california.png', 
+    immagine: california, 
     quantita: 0 
   },
   { 
@@ -12,7 +19,7 @@ export const ITEMS = [
     nome: "Dragon", 
     porzione: "4 pz.", 
     prezzo: 2.99, 
-    immagine: '../images/dragon.png', 
+    immagine: dragon, 
     quantita: 0 
   },
   { 
@@ -20,7 +27,7 @@ export const ITEMS = [
     nome: "Dynamite", 
     porzione: "8 pz.", 
     prezzo: 3.99, 
-    immagine: '../images/dynamite.png', 
+    immagine: dynamite, 
     quantita: 0 
   },
   { 
@@ -28,7 +35,7 @@ export const ITEMS = [
     nome: "Philadelphia", 
     porzione: "6 pz.", 
     prezzo: 4.99, 
-    immagine: '../images/philadelphia.png', 
+    immagine: philadelphia, 
     quantita: 0 
   },
   { 
@@ -36,7 +43,7 @@ export const ITEMS = [
     nome: "Rainbow", 
     porzione: "8 pz.", 
     prezzo: 5.99, 
-    immagine: '../images/rainbow.png', 
+    immagine: rainbow, 
     quantita: 0 
   },
   { 
@@ -44,7 +51,7 @@ export const ITEMS = [
     nome: "Shrimp", 
     porzione: "6 pz.", 
     prezzo: 6.99, 
-    immagine: '../images/shrimp.png', 
+    immagine: shrimp, 
     quantita: 0 
   },
 ]
