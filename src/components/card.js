@@ -1,6 +1,14 @@
 import '../components_css/card.css'
+import { useState } from 'react';
 
 function Card(props) {
+
+
+    const [quantita, setQuantita] = useState(0)
+
+    const prova = () => {
+        setQuantita(quantita + 1)
+    }
 
     return (
         < >
@@ -13,8 +21,8 @@ function Card(props) {
                         <p id="porzione">{props.card.porzione}</p>
                         <p className="card-text">€ {props.card.prezzo}</p>
                         <button id="button-" onClick={() => props.diminuisci(props.card)} className="btn btn-warning">-</button>
-                        <input id="quantita" className=" form-control form-control-lg" type="text" value={props.card.quantita} onChange={() => props.aumenta(props.card)} />
-                        <button id="buttonPlus" onClick={() => props.aumenta(props.card)} className="btn btn-warning">+</button>
+                        <input id="quantita" className=" form-control form-control-lg" type="text" value={quantita} onChange={() => props.aumenta(props.card)} />
+                        <button id="buttonPlus" onClick={() => prova()} className="btn btn-warning">+</button>
                     </div>
                 </div>
             </div>
