@@ -1,22 +1,8 @@
 import React from 'react'
 import '../components_css/riepilogoOrdine.css'
 
-
-const riepilogoOrdine = (props) => {
-  
-   
-  return (
-    <>
-      
-    <div className='main-content'>
-     
-    </div>
-
-
-</>
-  )
-
-
+const riepilogoOrdine = () => {
+  return <div className='main-content h1 text-light m-5'>Riepilogo Ordine</div>
 }
 
 export default riepilogoOrdine

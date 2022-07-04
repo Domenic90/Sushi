@@ -2,9 +2,11 @@ import React, {useState} from "react"
 import Card from "./card";
 import ConfirmButton from "./confirmButton"
 import { ITEMS } from "../data/items"
+import { useNavigate } from "react-router-dom";
 
 function FirstPage(){
   const [cards, setCards] = useState(ITEMS);
+  let navigate = useNavigate()
 
   const IncrementaQuantita = card => {
     const newCard = [...cards]
@@ -29,6 +31,8 @@ function FirstPage(){
     }
   }
 
+  const vaiAlRiepilogo = () => navigate("/riepilogoOrdine")
+
   return (
     <>
       <div className="container">
@@ -42,7 +46,7 @@ function FirstPage(){
               diminuisci={DecrementaQuantita} />
           ))}
         </div>
-        <ConfirmButton />
+        <ConfirmButton onClick={vaiAlRiepilogo}>Vai al Riepilogo</ConfirmButton>
       </div>
     </>
   )
