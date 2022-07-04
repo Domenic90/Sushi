@@ -79,7 +79,7 @@ import Footer from './components/footer';
 import ConfirmButton from './components/confirmButton';
 import RiepilogoOrdine from './components/riepilogoOrdine';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-
+import { ITEMS } from "./data/items"
 
 import california from './images/california.png';
 import dragon from './images/dragon.png';
@@ -91,7 +91,6 @@ import shrimp from './images/shrimp.png';
 
 
 const App = () => {
-
   const [cards, setCards] = useState([
     { id: 0, nome: "California", porzione: "6 pz.", prezzo: 1.99, immagine: california, quantita: 0 },
     { id: 1, nome: "Dragon", porzione: "4 pz.", prezzo: 2.99, immagine: dragon, quantita: 0 },
