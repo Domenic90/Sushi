@@ -1,11 +1,12 @@
 import React from 'react'
+import RegForm from './Auth/RegForm'
 import Navbar from './Navbar'
 
 const Registrati = () => {
   return (
     <>
       <Navbar />
-      <div className='main-content h1 text-light m-5'>Registrazione</div>
+      <RegForm />
     </>
   )
 }

@@ -1,10 +1,10 @@
 import { useState } from 'react';
-import classes from './AuthForm.module.css';
+import classes from './RegForm.module.css';
 
-const AuthForm = () => {
+const RegForm = () => {
   // const [isLogin, setIsLogin] = useState(true);
 
-  // const switchAuthModeHandler = () => {
+  // const switchRegModeHandler = () => {
   //   setIsLogin((prevState) => !prevState);
   // };
 
@@ -21,16 +21,13 @@ const AuthForm = () => {
             <label htmlFor='password'>Password</label>
             <input type='password' id='password' required />
           </div>
+          <div className={classes.control}>
+            <label htmlFor='password'>Ripeti Password</label>
+            <input type='password' id='password' required />
+          </div>
           <div className={classes.actions}>
-            <button>Accedi
+            <button>Registrati
             {/* {isLogin ? 'Login' : 'Create Account'} */}
-            </button>
-            <button
-              type='button'
-              className={classes.toggle}
-              // onClick={switchAuthModeHandler}
-            >
-              Password dimenticata{/* {isLogin ? 'Create new account' : 'Login with existing account'} */}
             </button>
           </div>
         </form>
@@ -39,4 +36,4 @@ const AuthForm = () => {
   );
 };
 
-export default AuthForm;
+export default RegForm;
