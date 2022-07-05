@@ -15,10 +15,10 @@ function FirstPage(){
   return (
     <>
       <Navbar
-     login = "Login"
-     registrati = "Registrati"
-     onClickLogin={vaiAlLogin}
-     onClickRegistrazione={vaiAllaRegistrazione}
+        login = "Login"
+        registrati = "Registrati"
+        onClickLogin={vaiAlLogin}
+        onClickRegistrazione={vaiAllaRegistrazione}
       />
       
       <div className="container">
