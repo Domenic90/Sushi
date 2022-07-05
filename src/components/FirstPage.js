@@ -16,7 +16,6 @@ function FirstPage(){
     <>
       <Navbar
         login = "Login"
-        registrati = "Registrati"
         onClickLogin={vaiAlLogin}
         onClickRegistrazione={vaiAllaRegistrazione}
       />
