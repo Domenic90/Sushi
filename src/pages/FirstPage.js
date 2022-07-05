@@ -1,9 +1,9 @@
 import React from "react"
-import Card from "./Card";
-import ConfirmButton from "./ConfirmButton"
+import Card from "../components/Card";
+import ConfirmButton from "../components/ConfirmButton"
 import { ITEMS } from "../data/items"
 import { useNavigate } from "react-router-dom";
-import Navbar from "./Navbar";
+import Navbar from "../components/Navbar";
 
 function FirstPage(){
   let navigate = useNavigate()

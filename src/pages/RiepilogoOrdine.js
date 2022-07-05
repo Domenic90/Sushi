@@ -1,6 +1,6 @@
 import React from 'react'
 import '../components_css/riepilogoOrdine.css'
-import Navbar from './Navbar'
+import Navbar from '../components/Navbar'
 
 const riepilogoOrdine = () => {
   return (
