@@ -1,10 +1,16 @@
 import { useContext } from "react"
-import { Link } from "react-router-dom"
+import { Link, useNavigate } from "react-router-dom"
 import AuthContext from "../store/auth-context";
 
-function Navbar(props) {
+function Navbar() {
+  const navigate = useNavigate()
   const authCtx = useContext(AuthContext)
   const isLoggedIn = authCtx.isLoggedIn
+
+  const logoutHandler = () => {
+    authCtx.logout()
+    navigate("/")
+  }
 
   return (
 
@@ -15,12 +21,11 @@ function Navbar(props) {
         { !isLoggedIn &&
           <li className="nav-item text-light">
             <Link to="/login">Login</Link>
-            {/* <a className="nav-link text-light" href="#" onClick={props.onClickLogin}>{props.login}</a> */}
           </li>
         }
         { isLoggedIn &&
-          <li className="nav-item">
-            <a className="nav-link text-light" href="#">{props.logout}</a>
+          <li className="nav-item text-light">
+            <button onClick={logoutHandler}>Logout</button>
           </li>
         }
         </ul>
