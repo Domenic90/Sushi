@@ -19,13 +19,13 @@ function Navbar() {
         <span className="navbar-brand mb-0 h1">Shimazu Sushi</span>
         <ul className="nav">
         { !isLoggedIn &&
-          <li className="nav-item text-light">
-            <Link to="/login">Login</Link>
+          <li className="nav-item">
+            <Link to="/login" className="text-light">Login</Link>
           </li>
         }
         { isLoggedIn &&
-          <li className="nav-item text-light">
-            <button onClick={logoutHandler}>Logout</button>
+          <li className="nav-item">
+            <button onClick={logoutHandler} className="btn-dark text-light">Logout</button>
           </li>
         }
         </ul>
